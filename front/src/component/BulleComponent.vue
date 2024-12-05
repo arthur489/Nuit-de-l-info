@@ -6,7 +6,10 @@
         <div class="bubble" style="left: 30%; animation-duration: 6s;"></div>
         <div class="bubble" style="left: 40%; animation-duration: 7s;"></div>
         <div class="bubble" style="left: 50%; animation-duration: 8s;"></div>
-        <div class="bubble" style="left: 60%; animation-duration: 9s;"></div>
+        <div class="bubble" style="left: 60%; animation-duration: 5s;"></div>
+        <div class="bubble" style="left: 70%; animation-duration: 7s;"></div>
+        <div class="bubble" style="left: 80%; animation-duration: 4s;"></div>
+        <div class="bubble" style="left: 90%; animation-duration: 6s;"></div>
     </div>
 </template>
 
@@ -14,17 +17,6 @@
 
 export default {
   name: 'BubbleComponent',
-  mounted() {
-    const bubbleContainer = document.getElementById('bubble-container');
-    for (let i = 0; i < 10; i++) {
-      const bubble = document.createElement('div');
-      bubble.classList.add('bubble');
-      bubble.style.left = 10*i + '%';
-      bubble.style.animationDuration = `${Math.random() * 6 + 3}s`;
-      bubbleContainer.appendChild(bubble);
-    }
-  }
-  //created
 }
 
 </script>
@@ -45,7 +37,8 @@ export default {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: blue;
+  background: radial-gradient(circle, rgba(0, 204, 255, 1) 0%, rgba(0, 150, 255, 0.8) 100%);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5), 0 0 30px rgba(0, 204, 255, 0.4);
   opacity: 0;
   animation: bubble-animation 5s linear infinite;
 }

@@ -9,6 +9,7 @@
             :image_left="item.image_left" 
             :image_right="item.image_right"
             :id="item.id"
+            :description="item.description"
         />
     </div>
 </template>

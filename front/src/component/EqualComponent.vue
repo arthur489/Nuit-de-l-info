@@ -42,15 +42,15 @@ export default {
             default: 'courant.jpg',
             required: true
         },
-        id :{
-            type: Number,
-            default: 0,
+        description : {
+            type: String,
+            default: 'Description',
             required: true
-        },
+        }
     },
     methods: {
         ViewDesc() {
-            this.$router.push({name: 'DescriptionPage', params: {id: this.id}});
+            this.$router.push({name: 'DescriptionPage', params: {description: this.description}});
         }
     }
 }
