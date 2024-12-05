@@ -1,7 +1,8 @@
 <template>
+    
     <div class="home_page">
         <EqualComponent v-for="(item, index) in list" 
-            :key="index" 
+            :key="index"
             :msg_left="item.msg_left" 
             :msg_right="item.msg_right" 
             :image_left="item.image_left" 
@@ -40,7 +41,32 @@ export default {
                     msg_right: 'Récif de corail',
                     image_left: 'squelette.webp',
                     image_right: 'corail.jpg'
-                }
+                },
+                {
+                    msg_left: 'peau',
+                    msg_right: "surface de l'eau",
+                    image_left: 'peau.jpg',
+                    image_right: 'water.jpg'
+                },
+                {
+                    msg_left: 'systeme immunitaire',
+                    msg_right: 'écosystème',
+                    image_left: 'systeme_im.png',
+                    image_right: 'ecosystem.png'
+                },
+                {
+                    msg_left: 'microbiote',
+                    msg_right: 'plancton',
+                    image_left: 'microbiote.jpeg',
+                    image_right: 'plancton.webp'
+                },
+                {
+                    msg_left: 'reins',
+                    msg_right: 'marée',
+                    image_left: 'rein.jpeg',
+                    image_right: 'marée.jpg'
+                },
+                
             ]
         }
     }
@@ -57,7 +83,7 @@ export default {
     height: 100%;
     width: 100%;
     background-color: aqua;
-    gap: 20px;
+    gap: 0px;
     flex-wrap: wrap;
     flex-direction: column;
 }
