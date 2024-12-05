@@ -29,6 +29,9 @@ export default {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 35px;
 }
 
 .title {
