@@ -34,6 +34,12 @@ export default {
                     msg_right: 'Photosynthèse',
                     image_left: 'poumon.jpg',
                     image_right: 'photosynthèse.jpg'
+                },
+                {
+                    msg_left: 'Squelette',
+                    msg_right: 'Récif de corail',
+                    image_left: 'squelette.webp',
+                    image_right: 'corail.jpg'
                 }
             ]
         }
