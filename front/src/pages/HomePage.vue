@@ -1,25 +1,39 @@
 <template>
-    <div>
-        <h1>
-            Home Page
-        </h1>
-        <HelloComponent/>
-        <ImageContainer/>
+    <div class="home_page">
+        <EqualComponent
+            msg_left="Coeur"
+            msg_right="Courant"
+            image_left="coeur.jpg"
+            image_right="courant.jpg"
+        />
     </div>
 </template>
 
 <script>
 
-import HelloComponent from '@/component/HelloComponent.vue';
-import ImageContainer from '@/component/ImageContainer.vue';
+import EqualComponent from '@/component/EqualComponent.vue';
 
 
 export default {
     name: 'HomePage',
     components: {
-        HelloComponent,
-        ImageContainer
+        EqualComponent
     }
 }
 
 </script>
+
+<style scoped>
+
+.home_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+</style> 
