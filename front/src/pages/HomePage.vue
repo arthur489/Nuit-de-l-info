@@ -1,6 +1,7 @@
 <template>
     
     <div class="home_page">
+        <BulleComponent/>
         <EqualComponent v-for="(item, index) in list" 
             :key="index"
             :msg_left="item.msg_left" 
@@ -14,12 +15,14 @@
 <script>
 
 import EqualComponent from '@/component/EqualComponent.vue';
+import BulleComponent from '@/component/BulleComponent.vue';
 
 
 export default {
     name: 'HomePage',
     components: {
-        EqualComponent
+        EqualComponent,
+        BulleComponent
     },
     data() {
         return {
@@ -84,8 +87,10 @@ export default {
     width: 100%;
     background-color: aqua;
     gap: 0px;
-    flex-wrap: wrap;
     flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
 }
 
 </style> 
