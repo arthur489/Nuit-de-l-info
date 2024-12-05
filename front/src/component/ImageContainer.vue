@@ -41,6 +41,7 @@ export default {
 }
 
 .hover_text {
+    cursor: default;
     position: absolute;
     opacity: 0;
     transition: opacity 0.3s;
