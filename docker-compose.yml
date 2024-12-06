@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  front:
+    build: ./front
+    container_name: nuitdelinfo
+    restart: always
+    networks:
+      - caddy
+
+networks:
+  caddy:
+    external: true
