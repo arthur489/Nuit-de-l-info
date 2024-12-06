@@ -1,6 +1,10 @@
 <template>
     <div id="bubble-container">
-        <div v-for="(bubble, index) in bubbles" :key="index" class="bubble" :style="{ left: bubble.left, animationDuration: bubble.duration }"></div>
+        <div v-for="(bubble, index) in bubbles" 
+            :key="index" 
+            class="bubble" 
+            :style="{ left: bubble.left, animationDuration: bubble.duration }"
+        />
     </div>
 </template>
 
@@ -22,11 +26,11 @@ export default {
                 if (this.bubbles.length < 500) {
                     this.bubbles.push({
                         left: `${Math.random() * 100}vw`,
-                        duration: `${Math.random() * 3 + 5}s`
+                        duration: `${Math.random() * 3 + 5}s`,
                     });
                 }
             }, 50);
-        }
+        },
     }
 }
 
@@ -52,6 +56,7 @@ export default {
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5), 0 0 30px rgba(0, 204, 255, 0.4);
   opacity: 0;
   animation: bubble-animation 5s linear infinite;
+  z-index: 100;
 }
 
 @keyframes bubble-animation {
