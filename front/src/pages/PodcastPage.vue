@@ -23,7 +23,7 @@
 <script>
 
 export default {
-  name: 'PotcastPage',
+  name: 'podcastPage',
 }
 
 </script>

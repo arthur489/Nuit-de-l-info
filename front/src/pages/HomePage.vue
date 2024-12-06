@@ -1,7 +1,7 @@
 <template>
     <div style="display: flex; gap: 10px;">
-        <button class="button" @click="$router.push('/potcast')" style="flex: 0;">
-            Potcast
+        <button class="button" @click="$router.push('/podcast')" style="flex: 0;">
+            podcast
         </button>
         <div style="display: flex; justify-content: center; align-items: center; font-size: 60px; color: white; font-weight: 700; margin-left: 12%;">
             Cliquer sur les organes pour en savoir plus
