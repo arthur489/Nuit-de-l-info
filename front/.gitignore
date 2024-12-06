@@ -1,7 +1,9 @@
 .DS_Store
 node_modules
 /dist
-
+*.mov
+*.mp4
+*.m4a
 
 # local env files
 .env.local
