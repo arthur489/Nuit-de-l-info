@@ -16,6 +16,7 @@
         <EqualComponent :msg_left="list[index['Systeme immunitaire']].msg_left" :msg_right="list[index['Systeme immunitaire']].msg_right" :image_left="list[index['Systeme immunitaire']].image_left" :image_right="list[index['Systeme immunitaire']].image_right" :description="list[index['Systeme immunitaire']].description" :title="list[index['Systeme immunitaire']].title" v-if="list[index['Systeme immunitaire']].visible"/>
         <EqualComponent :msg_left="list[index.Microbiote].msg_left" :msg_right="list[index.Microbiote].msg_right" :image_left="list[index.Microbiote].image_left" :image_right="list[index.Microbiote].image_right" :description="list[index.Microbiote].description" :title="list[index.Microbiote].title" v-if="list[index.Microbiote].visible"/>
         <EqualComponent :msg_left="list[index.Reins].msg_left" :msg_right="list[index.Reins].msg_right" :image_left="list[index.Reins].image_left" :image_right="list[index.Reins].image_right" :description="list[index.Reins].description" :title="list[index.Reins].title" v-if="list[index.Reins].visible"/>
+        <EqualComponent :msg_left="list[index.Cerveau].msg_left" :msg_right="list[index.Cerveau].msg_right" :image_left="list[index.Cerveau].image_left" :image_right="list[index.Cerveau].image_right" :description="list[index.Cerveau].description" :title="list[index.Cerveau].title" v-if="list[index.Cerveau].visible"/>
     </div>
 
     <BulleComponent/>
@@ -36,7 +37,7 @@ export default {
     },
     data() {
         return {
-            index : {"Coeur": 0, "Poumon": 1, "Squelette": 2, "Peau": 3, "Systeme immunitaire": 4, "Microbiote": 5, "Reins": 6},
+            index : {"Coeur": 0, "Poumon": 1, "Squelette": 2, "Peau": 3, "Systeme immunitaire": 4, "Microbiote": 5, "Reins": 6, "Cerveau": 7},
             zones :[
                 { shape: "circle", coords: [151, 65, 50], color: "rgba(0, 0, 0, 0.0)", name: "Cerveau" },
                 { shape: "circle", coords: [30, 435, 50], color: "rgba(0, 0, 0, 0.0)", name: "Os" },
@@ -108,6 +109,15 @@ export default {
                     description: 'Les reins dans le corps humain filtrent le sang, éliminent les toxines et régulent l\'équilibre hydrique et électrolytique. De la même manière, la marée, causée par l\'attraction gravitationnelle de la lune et du soleil, influence les niveaux d\'eau dans les océans, nettoyant les zones côtières et apportant des nutriments. Les deux processus sont essentiels pour maintenir l’équilibre des systèmes naturels, en permettant une purification et une régulation continues.',
                     visible: false
                 },
+                {
+                    title: 'Le cerveau et les océans',
+                    msg_left: 'cerveau',
+                    msg_right: 'océan',
+                    image_left: 'cerveau.jpg',
+                    image_right: 'ocean.jpg',
+                    description: 'Le cerveau humain et l\'Océan partagent des caractéristiques fascinantes, notamment leur complexité et leur capacité à maintenir un équilibre dynamique. Le cerveau, avec ses milliards de neurones interconnectés, reçoit et traite une immense quantité d\'informations, régulant toutes les fonctions corporelles. Il crée des connexions, des réseaux et des processus cognitifs qui permettent à l\'individu de percevoir, penser et réagir au monde qui l\'entoure.De manière similaire, l\'Océan fonctionne comme un système de communication et de régulation complexe. Il est composé de réseaux de courants marins, de cycles d\'eau, et d\'interactions biologiques qui régulent la température, l\'humidité et les conditions climatiques mondiales. Comme le cerveau, l\'Océan réagit et s\'adapte aux changements externes, et toute perturbation de son équilibre (comme la pollution ou le réchauffement climatique) peut affecter l’ensemble du système, tout comme un dérèglement dans le cerveau peut perturber le corps humain. Ces deux systèmes, tout en étant immensément vastes et complexes, agissent en permanence pour maintenir un équilibre crucial pour la vie.',
+                    visible: false
+                }
                 
             ]
         }
@@ -132,6 +142,8 @@ export default {
                 this.list[this.index['Systeme immunitaire']].visible = true;
                 this.list[this.index.Microbiote].visible = true;
                 this.list[this.index.Reins].visible = true;
+            } else if (name === "Cerveau") {
+                this.list[this.index.Cerveau].visible = true;
             }
         },
 
