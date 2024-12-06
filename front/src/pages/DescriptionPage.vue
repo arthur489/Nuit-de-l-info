@@ -3,11 +3,11 @@
         Back
     </button>
     <div class="title">
-        <h1>{{ title }}</h1>
+        <h1 style="color:aliceblue">{{ title }}</h1>
     </div>
     <div class="img-equal">
-        <ImageContainer :msg="description" :image="image_left"/>
-        <ImageContainer :msg="description" :image="image_right"/>
+        <img :src="require(`@/assets/${image_left}`)" class="img"/>
+        <img :src="require(`@/assets/${image_right}`)" class="img"/>
     </div>
     <div class="description" @click="move" id="description">
         <p>{{ description }}</p>
@@ -20,6 +20,9 @@ export default {
     data(){
         return {
             description: localStorage.getItem('description'),
+            image_left: localStorage.getItem('image_left'),
+            image_right: localStorage.getItem('image_right'),
+            title: 'Description',
             position: 0,
             has_been_clicked: false
         }
@@ -47,6 +50,18 @@ export default {
 </script>
 
 <style scoped>
+
+.img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.img-equal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .description {
     display: flex;

@@ -51,6 +51,8 @@ export default {
     methods: {
         ViewDesc() {
             localStorage.setItem('description', this.description);
+            localStorage.setItem('image_left', this.image_left);
+            localStorage.setItem('image_right', this.image_right);
             this.$router.push({name: 'DescriptionPage'});
         }
     }
