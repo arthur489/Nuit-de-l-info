@@ -1,7 +1,7 @@
 <template>
     <div style="display: flex; gap: 10px;">
         <button class="button" @click="$router.push('/podcast')" style="flex: 0;">
-            podcast
+            Podcast
         </button>
         <div style="display: flex; justify-content: center; align-items: center; font-size: 60px; color: white; font-weight: 700; margin-left: 12%;">
             Cliquer sur les organes pour en savoir plus
@@ -217,6 +217,8 @@ export default {
     padding: 10px 15px;
     cursor: pointer;
     margin: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 </style> 
