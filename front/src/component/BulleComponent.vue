@@ -23,13 +23,13 @@ export default {
     methods: {
         createBubble() {
             setInterval(() => {
-                if (this.bubbles.length < 500) {
+                if (this.bubbles.length < 100) {
                     this.bubbles.push({
                         left: `${Math.random() * 100}vw`,
                         duration: `${Math.random() * 3 + 5}s`,
                     });
                 }
-            }, 50);
+            }, 100);
         },
     }
 }

@@ -1,13 +1,10 @@
 <template>
-    <div style="display: flex; gap: 20px;">
+    <div class="details" @click="ViewDesc">
         <ImageContainer :msg="msg_left" :image="image_left"/>
-            <h1 style="font-size: 50px;">
+            <h1 style="font-size: 50px; color: white;">
                 =
             </h1>
         <ImageContainer :msg="msg_right" :image="image_right"/>
-        <button class="details" @click="ViewDesc">
-            Details
-        </button>
     </div>
 </template>
 
@@ -71,25 +68,20 @@ export default {
 
 .details:hover {
     background-color: darkblue;
+    cursor: pointer;
 }   
 
 .details:active {
-    background-color: lightblue;
+    background-color: rgb(0, 0, 53);
     color: black;
 }
 .details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 15px;
-    padding: 10px 20px;
-    cursor: pointer;
-    height: 40px;
-    margin-top: 42px;
+    display: flex; 
+    gap: 20px; 
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    width: 15%;
 }
 
 </style>
