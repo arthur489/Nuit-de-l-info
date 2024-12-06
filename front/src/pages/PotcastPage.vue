@@ -2,26 +2,17 @@
     <button @click="$router.push('/')" class="button">Retour</button>
     <div class="audio-container">
       <h2>Podcast de Frederic Le Moigne (audio)</h2>
-      <audio controls style="width:650px">
-        <source src="@/assets/audio.m4a" type="audio/mp4" />
-        Votre navigateur ne prend pas en charge l'élément audio.
-      </audio>
+      <iframe src="https://1drv.ms/u/c/e625f15aac5844d0/IQQ6O92KOLAgTKIJY1vboggTAWuEtddnCbAc-5jGRYlgu5U" width="250" height="120" frameborder="0" scrolling="no"></iframe>
       <div class="video-container">
         <h2>Podcast de Frederic Le Moigne (vidéos)</h2>
         <div class="video-row">
           <div class="video-item">
             <h3>Partie 1</h3>
-            <video controls width="500" height="280">
-              <source src="@/assets/Frederic_Le_Moigne_-_Part_1-SD_480p.mov" type="video/mp4" />
-              Votre navigateur ne prend pas en charge l'élément vidéo.
-            </video>
+            <iframe src="https://1drv.ms/v/c/e625f15aac5844d0/IQTo-PL74HPDQ6o6Mjh4uKZFAZ2TUYiicCnZlU4iX1wWxEA" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen></iframe>
           </div>
           <div class="video-item">
             <h3>Partie 2</h3>
-            <video controls width="500" height="280">
-              <source src="@/assets/Frederic_Le_Moigne_-_Part_2-SD_480p.mov" type="video/mp4" />
-              Votre navigateur ne prend pas en charge l'élément vidéo.
-            </video>
+            <iframe src="https://1drv.ms/v/c/e625f15aac5844d0/IQQBfCr_-Ub-R7_k82A5lKx6Afd8qAutpJNyJ3QjFBHt55U" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen></iframe>
           </div>
         </div>
       </div>

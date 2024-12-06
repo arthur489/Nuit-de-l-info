@@ -1,5 +1,12 @@
 <template>
-    <button class="button" @click="$router.push('/potcast')">Potcast</button>
+    <div style="display: flex; gap: 10px;">
+        <button class="button" @click="$router.push('/potcast')" style="flex: 0;">
+            Potcast
+        </button>
+        <div style="display: flex; justify-content: center; align-items: center; font-size: 60px; color: white; font-weight: 700; margin-left: 12%;">
+            Cliquer sur les organes pour en savoir plus
+        </div>
+    </div>
     <canvas ref="canvas"></canvas>
     <div style = "display: flex; gap: 20px; justify-content: center; align-items: left; flex-direction: column; margin-left: 5%;margin-top: 5%">
         <EqualComponent :msg_left="list[index.Coeur].msg_left" :msg_right="list[index.Coeur].msg_right" :image_left="list[index.Coeur].image_left" :image_right="list[index.Coeur].image_right" :description="list[index.Coeur].description" :title="list[index.Coeur].title" v-if="list[index.Coeur].visible"/>
@@ -31,11 +38,11 @@ export default {
         return {
             index : {"Coeur": 0, "Poumon": 1, "Squelette": 2, "Peau": 3, "Systeme immunitaire": 4, "Microbiote": 5, "Reins": 6},
             zones :[
-                { shape: "circle", coords: [151, 65, 50], color: "rgba(0, 0, 0, 0.5)", name: "Cerveau" },
-                { shape: "circle", coords: [30, 435, 50], color: "rgba(0, 0, 0, 0.5)", name: "Os" },
-                { shape: "circle", coords: [270, 435, 50], color: "rgba(0, 0, 0, 0.5)", name: "Peau" },
-                { shape: "rect", coords: [100, 300, 200,420], color: "rgba(0, 0, 0, 0.5)", name: "Intestins" },
-                { shape: "rect", coords: [90, 170, 210,270], color: "rgba(0, 0, 0, 0.5)", name: "Poumons" },
+                { shape: "circle", coords: [151, 65, 50], color: "rgba(0, 0, 0, 0.0)", name: "Cerveau" },
+                { shape: "circle", coords: [30, 435, 50], color: "rgba(0, 0, 0, 0.0)", name: "Os" },
+                { shape: "circle", coords: [270, 435, 50], color: "rgba(0, 0, 0, 0.0)", name: "Peau" },
+                { shape: "rect", coords: [100, 300, 200,420], color: "rgba(0, 0, 0, 0.0)", name: "Intestins" },
+                { shape: "rect", coords: [90, 170, 210,270], color: "rgba(0, 0, 0, 0.0)", name: "Poumons" },
             ],
             list: [
                 {
