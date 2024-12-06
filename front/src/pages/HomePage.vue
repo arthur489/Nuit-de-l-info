@@ -101,7 +101,6 @@ export default {
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: aqua;
     gap: 0px;
     flex-direction: column;
     overflow-y: scroll;

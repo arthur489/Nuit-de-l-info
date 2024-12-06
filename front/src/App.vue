@@ -24,7 +24,7 @@ html, body, #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: aqua;
+  background: linear-gradient(180deg, #0553fa, #00061ffa);
   position: fixed;
   width: 100%;
   height: 100%;

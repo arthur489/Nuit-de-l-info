@@ -1,22 +1,33 @@
 <template>
     <div id="bubble-container">
-        <div class="bubble"></div>
-        <div class="bubble" style="left: 10%; animation-duration: 4s;"></div>
-        <div class="bubble" style="left: 20%; animation-duration: 5s;"></div>
-        <div class="bubble" style="left: 30%; animation-duration: 6s;"></div>
-        <div class="bubble" style="left: 40%; animation-duration: 7s;"></div>
-        <div class="bubble" style="left: 50%; animation-duration: 8s;"></div>
-        <div class="bubble" style="left: 60%; animation-duration: 5s;"></div>
-        <div class="bubble" style="left: 70%; animation-duration: 7s;"></div>
-        <div class="bubble" style="left: 80%; animation-duration: 4s;"></div>
-        <div class="bubble" style="left: 90%; animation-duration: 6s;"></div>
+        <div v-for="(bubble, index) in bubbles" :key="index" class="bubble" :style="{ left: bubble.left, animationDuration: bubble.duration }"></div>
     </div>
 </template>
 
 <script>
 
 export default {
-  name: 'BubbleComponent',
+    name: 'BubbleComponent',
+    data() {
+        return {
+            bubbles: []
+        }
+    },
+    mounted() {
+        this.createBubble();
+    },
+    methods: {
+        createBubble() {
+            setInterval(() => {
+                if (this.bubbles.length < 30) {
+                    this.bubbles.push({
+                        left: `${Math.random() * 100}vw`,
+                        duration: `${Math.random() * 2 + 3}s`
+                    });
+                }
+            }, 300);
+        }
+    }
 }
 
 </script>

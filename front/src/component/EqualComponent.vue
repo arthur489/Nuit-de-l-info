@@ -50,7 +50,8 @@ export default {
     },
     methods: {
         ViewDesc() {
-            this.$router.push({name: 'DescriptionPage', params: {description: this.description}});
+            localStorage.setItem('description', this.description);
+            this.$router.push({name: 'DescriptionPage'});
         }
     }
 }
