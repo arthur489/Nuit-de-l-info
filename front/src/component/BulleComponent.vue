@@ -19,13 +19,13 @@ export default {
     methods: {
         createBubble() {
             setInterval(() => {
-                if (this.bubbles.length < 30) {
+                if (this.bubbles.length < 500) {
                     this.bubbles.push({
                         left: `${Math.random() * 100}vw`,
-                        duration: `${Math.random() * 2 + 3}s`
+                        duration: `${Math.random() * 3 + 5}s`
                     });
                 }
-            }, 300);
+            }, 50);
         }
     }
 }
@@ -60,7 +60,7 @@ export default {
     transform: translateY(0);
   }
   100% {
-    opacity: 0;
+    opacity: 0.45;
     transform: translateY(-100vh);
   }
 }
