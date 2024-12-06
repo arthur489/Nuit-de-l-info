@@ -10,6 +10,7 @@
             :image_right="item.image_right"
             :id="item.id"
             :description="item.description"
+            :title="item.title"
         />
     </div>
 </template>
@@ -30,6 +31,7 @@ export default {
         return {
             list: [
                 {
+                    title: 'Le cœur et les courants marins',
                     msg_left: 'Coeur',
                     msg_right: 'Courant',
                     image_left: 'coeur.jpg',
@@ -38,6 +40,7 @@ export default {
                     description: 'Le cœur et les courants marins partagent un rôle vital: ils assurent la circulation et le transport. Le cœur pompe le sang à travers le corps, apportant oxygène et nutriments aux cellules, tandis que les courants marins, tels que le Gulf Stream, déplacent l\'eau à travers les océans, régulant la température et distribuant des éléments essentiels aux écosystèmes marins. Tous deux sont essentiels pour maintenir l\'équilibre et la vie dans leurs systèmes respectifs.',
                 },
                 {
+                    title: 'Les poumons et la photosynthèse',
                     msg_left: 'Poumon',
                     msg_right: 'Photosynthèse',
                     image_left: 'poumon.jpg',
@@ -46,6 +49,7 @@ export default {
                     description: 'Les poumons humains et le processus de photosynthèse dans l\'océan jouent un rôle crucial dans la régulation de l\'oxygène. Tandis que les poumons captent l\'oxygène et évacuent le dioxyde de carbone, la photosynthèse réalisée par les plantes marines et le phytoplancton libère de l\'oxygène dans l\'eau, fournissant ainsi l\'air nécessaire à la vie marine et terrestre. Ces processus permettent la respiration sur Terre et dans les mers.'
                 },
                 {
+                    title: 'Le squelette et le récif de corail',
                     msg_left: 'Squelette',
                     msg_right: 'Récif de corail',
                     image_left: 'squelette.webp',
@@ -54,6 +58,7 @@ export default {
                     description: 'Le squelette humain et les coraux sous-marins servent de structure fondamentale pour soutenir la vie. Le squelette humain offre un cadre rigide qui protège les organes internes et permet le mouvement, tout comme les coraux forment des structures solides, appelées récifs, qui abritent une biodiversité riche et offrent protection aux espèces marines. Ces deux éléments, en dépit de leur différence, soutiennent et stabilisent des écosystèmes complexes.'
                 },
                 {
+                    title: 'La peau et la surface de l\'eau',
                     msg_left: 'peau',
                     msg_right: "surface de l'eau",
                     image_left: 'peau.jpg',
@@ -62,6 +67,7 @@ export default {
                     description: 'La peau humaine et la surface de l\'eau dans l\'océan partagent une fonction de protection. La peau agit comme une barrière pour protéger les organes internes des infections et des agressions extérieures, tandis que la surface de l\'eau protège l\'écosystème marin des rayons ultraviolets nocifs, régule la température et contrôle les échanges gazeux. Les deux jouent un rôle crucial dans la préservation de la vie en limitant les impacts externes.'
                 },
                 {
+                    title: 'Le système immunitaire et l\'écosystème',
                     msg_left: 'systeme immunitaire',
                     msg_right: 'écosystème',
                     image_left: 'systeme_im.png',
@@ -70,6 +76,7 @@ export default {
                     description: 'Le système immunitaire humain défend le corps contre les infections et les maladies en détectant et en éliminant les agents pathogènes. De la même manière, les écosystèmes marins, comme les récifs coralliens, protègent les océans en agissant comme une barrière contre les perturbations externes. Ils maintiennent l\'équilibre en filtrant les polluants et en régulant les populations d\'organismes marins, tout comme le système immunitaire régule la santé corporelle.'
                 },
                 {
+                    title: 'Le microbiote et le plancton',
                     msg_left: 'microbiote',
                     msg_right: 'plancton',
                     image_left: 'microbiote.jpeg',
@@ -78,6 +85,7 @@ export default {
                     description: 'Le microbiote humain, composé de milliards de bactéries et autres micro-organismes, joue un rôle essentiel dans la digestion, la protection contre les infections et l\'équilibre du corps. Dans l\'océan, le plancton, bien qu\'invisible à l\'œil nu, est essentiel pour l\'équilibre écologique en produisant de l\'oxygène et en constituant la base de la chaîne alimentaire marine. Les deux régulent leur environnement, favorisant la santé et la survie dans leur domaine respectif.'
                 },
                 {
+                    title: 'Les reins et la marée',
                     msg_left: 'reins',
                     msg_right: 'marée',
                     image_left: 'rein.jpeg',

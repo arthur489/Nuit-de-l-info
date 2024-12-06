@@ -46,6 +46,11 @@ export default {
             type: String,
             default: 'Description',
             required: true
+        },
+        title : {
+            type: String,
+            default: 'Title',
+            required: true
         }
     },
     methods: {
@@ -53,6 +58,7 @@ export default {
             localStorage.setItem('description', this.description);
             localStorage.setItem('image_left', this.image_left);
             localStorage.setItem('image_right', this.image_right);
+            localStorage.setItem('title', this.title);
             this.$router.push({name: 'DescriptionPage'});
         }
     }

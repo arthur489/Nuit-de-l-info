@@ -22,7 +22,7 @@ export default {
             description: localStorage.getItem('description'),
             image_left: localStorage.getItem('image_left'),
             image_right: localStorage.getItem('image_right'),
-            title: 'Description',
+            title: localStorage.getItem('title'),
             position: 0,
             has_been_clicked: false
         }
