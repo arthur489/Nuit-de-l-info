@@ -1,4 +1,5 @@
 <template>
+    <button class="button" @click="$router.push('/potcast')">Potcast</button>
     <canvas ref="canvas"></canvas>
     <div style = "display: flex; gap: 20px; justify-content: center; align-items: left; flex-direction: column; margin-left: 5%;margin-top: 5%">
         <EqualComponent :msg_left="list[index.Coeur].msg_left" :msg_right="list[index.Coeur].msg_right" :image_left="list[index.Coeur].image_left" :image_right="list[index.Coeur].image_right" :description="list[index.Coeur].description" :title="list[index.Coeur].title" v-if="list[index.Coeur].visible"/>
@@ -195,6 +196,20 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 10px;
 }
 
 </style> 
