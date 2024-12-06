@@ -1,4 +1,5 @@
 <template>
+    <BulleComponent />
     <button @click="back" class="button">
         Back
     </button>
@@ -15,7 +16,12 @@
 </template>
 
 <script>
+import BulleComponent from '@/component/BulleComponent.vue';
+
 export default {
+    components: {
+        BulleComponent,
+    },
     name: 'DescriptionPage',
     data() {
         return {

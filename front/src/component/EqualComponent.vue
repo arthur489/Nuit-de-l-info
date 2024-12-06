@@ -15,7 +15,7 @@ import ImageContainer from './ImageContainer.vue';
 export default {
     name: 'EqualComponent',
     components: {
-        ImageContainer
+        ImageContainer,
     },
     props: {
         msg_left: {

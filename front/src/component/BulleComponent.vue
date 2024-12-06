@@ -56,7 +56,7 @@ export default {
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5), 0 0 30px rgba(0, 204, 255, 0.4);
   opacity: 0;
   animation: bubble-animation 5s linear infinite;
-  z-index: 100;
+  z-index: -1;
 }
 
 @keyframes bubble-animation {
